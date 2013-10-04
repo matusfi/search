@@ -1,0 +1,115 @@
+body {
+  font: 20px "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif
+}
+
+#container {
+  margin-left: 50px;
+  margin-right: auto;
+  width: 630;
+  padding-top: 50px
+}
+
+#search-box input {
+  border: 1px solid #d4d4d4;
+  width: 410px;
+  height: 38px;
+  font: bold 20px "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif;
+  color: #000;
+  padding-top: 12px;
+  padding-left: 9px;
+  padding-right: 9px
+}
+
+a {
+  color: #000;
+  text-decoration: none
+}
+
+h2 {
+  border-top: 1px solid #d4d4d4;
+  padding-top: 9px;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  clear: left;
+  float: left;
+  width: 410px;
+  color: #000
+}
+
+ul {
+  width: 200px;
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style-type: none
+}
+
+ul#first {
+  padding-right: 20px
+}
+
+.division {
+  clear: left;
+  float: left;
+  padding-top: 9px;
+  margin-top: 10px;
+  border-top: 1px solid #d4d4d4;
+  width: 410px
+}
+
+#result {
+  width: 600px;
+  color: #000;
+  padding: 2px;
+  font-size: 12pt;
+  font-weight: normal;
+  font-style: normal;
+  float: left
+}
+
+#output {
+  position: relative;
+  width: 100%;
+}
+
+table {
+  border-collapse:collapse;
+  width: auto;
+  margin:0px;
+  margin-top: 15px;
+  }
+  
+th,td {
+  border:1px solid #ddd;
+}
+
+tr:even {background-color: #eee;}
+
+td {
+  padding-right:4px;
+  padding-left:4px;
+}
+
+td.subject {
+  width:100px;
+}
+
+td.predicate {
+}
+td.object {
+}
+
+td.predicate a {
+  color: #898989;
+  font-weight: normal;
+  font-style: normal;
+}
+
+#spinner {
+  display: none;
+  position: absolute;
+  left: 500px;
+  top: 67px;
+}

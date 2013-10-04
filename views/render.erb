@@ -1,0 +1,31 @@
+<% if !@result.nil? && !@result.empty? %>
+  <table id="results">
+  <% @result.each do |row| %>
+  <tr>
+    <td class="subject">
+      <a class="resource" href="<%= URI.escape(row.subject[:uri].to_s)%>" title="<%= row.subject[:comment]%> -- <%= row.subject[:uri].to_s%>">
+        <%= row.subject[:label] %>
+      </a>
+    </td>
+    <!-- ==================== -->
+    <td class="predicate">
+      <a class="resource" href="<%= URI.escape(row.predicate[:uri].to_s)%>" title="<%= row.predicate[:comment]%> -- <%= row.predicate[:uri].to_s%>">
+        <%= row.predicate[:label]%>
+      </a>
+    </td>
+    <!-- ==================== -->
+    <td class="object">
+      <% if row.object[:literal] %>
+        <%= row.object[:label] %>
+      <% else %>
+        <a class="resource" href="<%= URI.escape(row.object[:uri].to_s)%>" title="<%= row.object[:comment]%> -- <%= row.object[:uri].to_s%>">
+          <%= row.object[:label] %>
+        </a>
+      <% end %>
+    </td>
+  </tr>  
+  <% end %>
+  </table>
+<% else %>
+    Nothing found. Check your search and try again please.
+<% end %>
